@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B98 Group</title>
+<meta name="description" content="B98 Group — Compañía Ballenita 98, S.L. Grupo de empresas y marcas de comercio online e intermediación comercial internacional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1e2a2f;--navy2:#24343a;--cream:#f7f3ec;--gold:#c6a464;--green:#1f6b35;--lime:#7cc243;--ink:#1d2433;--muted:#6b7385;--card:#ffffff;--line:#e6dfd0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{background:var(--cream);color:var(--navy);border-bottom:6px solid transparent;border-image:linear-gradient(90deg,var(--green),var(--gold),var(--navy)) 1;padding:0 16px 72px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;inset:auto -10% -40% auto;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(124,194,67,.22),transparent 70%)}
+.wrap{max-width:1120px;margin:0 auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:84px;width:auto;display:block}
+.langs{display:flex;gap:6px;flex-wrap:wrap}
+.langs button{background:transparent;border:1px solid rgba(30,42,47,.3);color:var(--navy);font:500 13px Inter,sans-serif;padding:6px 12px;border-radius:999px;cursor:pointer;transition:.2s}
+.langs button:hover,.langs button.on{background:var(--lime);border-color:var(--lime);color:var(--navy)}
+.hero{position:relative;z-index:1;padding-top:56px;max-width:760px}
+.eyebrow{color:var(--green);letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:600}
+h1{color:var(--navy);font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(36px,6vw,64px);line-height:1.08;margin:14px 0 18px}
+.lead{font-size:clamp(16px,2vw,19px);color:#4a565c;font-weight:300}
+main{padding:64px 16px 40px}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(28px,4vw,40px);font-weight:600;color:var(--navy);text-align:center}
+.sub{text-align:center;color:var(--muted);margin:8px auto 40px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,29,51,.12)}
+.logo{height:96px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#faf8f3}
+.logo img{max-height:96px;max-width:82%;object-fit:contain}
+.logo{position:relative;overflow:hidden;height:120px}
+.logo{background:#fff;border:1px solid var(--line)}
+.logo:before{content:"";position:absolute;left:14px;top:10px;width:34px;height:4px;border-radius:2px;background:var(--bar,#1e2a2f)}
+.t-dark{--bar:#1e2a2f}.t-dark2{--bar:#1e2a2f}.t-cream{--bar:#c6a464;background:#f6f1e7}.t-green{--bar:#1f6b35}.t-leaf{--bar:#c6a464}.t-lime{--bar:#9ccc3c}
+.logo img{position:relative;z-index:1}
+.card h3{font-size:19px;color:var(--navy)}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.go{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:var(--navy);border-top:1px solid var(--line);padding-top:14px}
+.go span{display:inline-grid;place-items:center;width:26px;height:26px;border:2px solid var(--navy);border-radius:50%;font-size:13px}
+.soon{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--lime);color:var(--navy);padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.about{max-width:820px;margin:72px auto 0;text-align:center}
+.about p{color:var(--ink);font-size:17px;margin-top:14px}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:36px}
+.pillar{border-top:2px solid var(--lime);padding-top:14px;text-align:left}
+.pillar b{display:block;color:var(--navy);margin-bottom:4px}
+.pillar span{color:var(--muted);font-size:14px}
+footer{background:var(--navy);color:rgba(246,241,231,.8);padding:40px 16px;margin-top:72px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:44px}
+footer a{color:var(--lime)}
+footer{background:linear-gradient(160deg,var(--navy),var(--navy2))}
+[data-l]{display:none}
+html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"],html[lang="fr"] [data-l="fr"],html[lang="zh"] [data-l="zh"]{display:revert}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <nav>
+   <a class="brand" href="/"><img src="b98-group.png" alt="B98 Group"></a>
+   <div class="langs" role="group" aria-label="Language">
+    <button data-set="es">ES</button><button data-set="en">EN</button><button data-set="fr">FR</button><button data-set="zh">中文</button>
+   </div>
+  </nav>
+  <div class="hero">
+   <div class="eyebrow"><span data-l="es">Grupo empresarial · España</span><span data-l="en">Business group · Spain</span><span data-l="fr">Groupe d'entreprises · Espagne</span><span data-l="zh">企业集团 · 西班牙</span></div>
+   <h1><span data-l="es">Marcas con alma, comercio sin fronteras.</span><span data-l="en">Brands with soul, commerce without borders.</span><span data-l="fr">Des marques avec une âme, un commerce sans frontières.</span><span data-l="zh">用心打造品牌，贸易无国界。</span></h1>
+   <p class="lead">
+    <span data-l="es">B98 Group reúne las tiendas, marcas y actividades de Compañía Ballenita 98, S.L.: comercio electrónico, marcas propias e intermediación comercial internacional, con sede en Toledo y vocación europea.</span>
+    <span data-l="en">B98 Group brings together the stores, brands and activities of Compañía Ballenita 98, S.L.: e-commerce, own brands and international trade representation, based in Toledo, Spain, with a European outlook.</span>
+    <span data-l="fr">B98 Group réunit les boutiques, marques et activités de Compañía Ballenita 98, S.L. : e-commerce, marques propres et représentation commerciale internationale, depuis Tolède (Espagne), avec une vocation européenne.</span>
+    <span data-l="zh">B98 Group 汇聚了 Compañía Ballenita 98, S.L. 旗下的网店、自有品牌与国际贸易代理业务。总部位于西班牙托莱多，面向整个欧洲市场。</span>
+   </p>
+  </div>
+ </div>
+</header>
+
+<main>
+ <div class="wrap">
+  <h2><span data-l="es">Nuestras marcas</span><span data-l="en">Our brands</span><span data-l="fr">Nos marques</span><span data-l="zh">旗下品牌</span></h2>
+  <p class="sub"><span data-l="es">Cada una con su propia personalidad, todas con el mismo compromiso: calidad, cercanía y confianza.</span><span data-l="en">Each with its own personality, all with the same commitment: quality, closeness and trust.</span><span data-l="fr">Chacune avec sa personnalité, toutes avec le même engagement : qualité, proximité et confiance.</span><span data-l="zh">每个品牌个性鲜明，却秉持同一承诺：品质、贴心与信赖。</span></p>
+
+  <div class="grid">
+   <a class="card" href="https://www.ballenita98.com" target="_blank" rel="noopener">
+    <div class="logo t-dark"><img src="ballenita98.png" alt="Ballenita 98"></div>
+    <h3>Compañía Ballenita 98</h3>
+    <p><span data-l="es">Representación comercial e intermediación internacional entre fábricas y distribuidores de Europa y América.</span><span data-l="en">Commercial representation and international brokerage between manufacturers and distributors in Europe and the Americas.</span><span data-l="fr">Représentation commerciale et intermédiation internationale entre fabricants et distributeurs en Europe et en Amérique.</span><span data-l="zh">商业代理与国际贸易中介，连接欧洲及美洲的制造商与经销商。</span></p>
+    <div class="go">ballenita98.com <span>➜</span></div>
+   </a>
+
+   <a class="card" href="https://casaacuestas.com" target="_blank" rel="noopener">
+    <div class="logo t-green"><img src="casaacuestas.png" alt="Casa a Cuestas"></div>
+    <h3>Casa a Cuestas</h3>
+    <p><span data-l="es">Tienda online de hogar, bienestar, niños y mascotas: productos bonitos y útiles para el día a día.</span><span data-l="en">Online store for home, wellbeing, kids and pets: beautiful, useful products for everyday life.</span><span data-l="fr">Boutique en ligne pour la maison, le bien-être, les enfants et les animaux : de beaux objets utiles au quotidien.</span><span data-l="zh">家居、健康、儿童与宠物网店：美观实用的日常好物。</span></p>
+    <div class="go">casaacuestas.com <span>➜</span></div>
+   </a>
+
+   <a class="card" href="https://winabrand.com" target="_blank" rel="noopener">
+    <div class="logo t-cream"><img src="winabrand.png" alt="Winabrand"></div>
+    <h3>Winabrand</h3>
+    <p><span data-l="es">Outlet online de marcas: moda y complementos de grandes firmas a precios atractivos.</span><span data-l="en">Online brand outlet: fashion and accessories from top labels at attractive prices.</span><span data-l="fr">Outlet de marques en ligne : mode et accessoires de grandes maisons à prix attractifs.</span><span data-l="zh">线上品牌奥特莱斯：以优惠价格提供知名品牌服饰与配饰。</span></p>
+    <div class="go">winabrand.com <span>➜</span></div>
+   </a>
+
+   <a class="card" href="https://cassdenandco.com" target="_blank" rel="noopener">
+    <div class="logo t-dark2"><img src="cassden.png" alt="Cassden &amp; Co"></div>
+    <h3>Cassden &amp; Co</h3>
+    <p><span data-l="es">Marca propia de estilo de vida: Cassden Living (hogar), Cassden Wellness (bienestar) y AquaMove (mascotas).</span><span data-l="en">Our own lifestyle brand: Cassden Living (home), Cassden Wellness (wellbeing) and AquaMove (pets).</span><span data-l="fr">Notre marque lifestyle : Cassden Living (maison), Cassden Wellness (bien-être) et AquaMove (animaux).</span><span data-l="zh">自有生活方式品牌：Cassden Living（家居）、Cassden Wellness（健康）及 AquaMove（宠物）。</span></p>
+    <div class="go">cassdenandco.com <span>➜</span></div>
+   </a>
+
+   <a class="card" href="https://picklesfera.com" target="_blank" rel="noopener">
+    <div class="logo t-lime"><img src="picklesfera.png" alt="Picklesfera"></div>
+    <h3>Picklesfera</h3>
+    <p><span data-l="es">Todo el pickleball en un solo sitio: palas, accesorios, blog y directorio de clubes en España y Europa.</span><span data-l="en">All things pickleball in one place: paddles, accessories, blog and club directory across Spain and Europe.</span><span data-l="fr">Tout le pickleball au même endroit : raquettes, accessoires, blog et annuaire des clubs en Espagne et en Europe.</span><span data-l="zh">匹克球一站式平台：球拍、配件、博客，以及西班牙和欧洲的俱乐部名录。</span></p>
+    <div class="go">picklesfera.com <span>➜</span></div>
+   </a>
+
+   <a class="card" href="https://www.lindasana.com" target="_blank" rel="noopener">
+    <div class="logo t-leaf"><img src="lindasana.png" alt="Lindasana"></div>
+    <h3>Lindasana <span class="soon"><span data-l="es">Próximamente</span><span data-l="en">Coming soon</span><span data-l="fr">Bientôt</span><span data-l="zh">即将上线</span></span></h3>
+    <p><span data-l="es">Salud y belleza de inspiración coreana, empezando por el colágeno bebible.</span><span data-l="en">Korean-inspired health and beauty, starting with drinkable collagen.</span><span data-l="fr">Santé et beauté d'inspiration coréenne, à commencer par le collagène à boire.</span><span data-l="zh">韩式灵感的健康与美容品牌，首推口服胶原蛋白。</span></p>
+    <div class="go">lindasana.com <span>➜</span></div>
+   </a>
+  </div>
+
+  <section class="about">
+   <h2><span data-l="es">Quiénes somos</span><span data-l="en">Who we are</span><span data-l="fr">Qui sommes-nous</span><span data-l="zh">关于我们</span></h2>
+   <p><span data-l="es">Somos una empresa familiar española con casi tres décadas de experiencia en comercio internacional. Trabajamos directamente con fabricantes de Europa, Asia y América para llevar a nuestros clientes productos cuidados, certificados y a buen precio.</span><span data-l="en">We are a Spanish family company with almost three decades of experience in international trade. We work directly with manufacturers in Europe, Asia and the Americas to bring our customers carefully selected, certified products at fair prices.</span><span data-l="fr">Nous sommes une entreprise familiale espagnole forte de près de trente ans d'expérience dans le commerce international. Nous travaillons directement avec des fabricants d'Europe, d'Asie et d'Amérique pour offrir à nos clients des produits soignés, certifiés et au juste prix.</span><span data-l="zh">我们是一家西班牙家族企业，拥有近三十年的国际贸易经验。我们与欧洲、亚洲和美洲的制造商直接合作，为客户提供精选、合规认证且价格合理的产品。</span></p>
+   <div class="pillars">
+    <div class="pillar"><b><span data-l="es">Calidad certificada</span><span data-l="en">Certified quality</span><span data-l="fr">Qualité certifiée</span><span data-l="zh">认证品质</span></b><span><span data-l="es">Solo productos conformes a la normativa europea (CE).</span><span data-l="en">Only products compliant with EU regulations (CE).</span><span data-l="fr">Uniquement des produits conformes aux normes européennes (CE).</span><span data-l="zh">只销售符合欧盟法规（CE）的产品。</span></span></div>
+    <div class="pillar"><b><span data-l="es">Socios a largo plazo</span><span data-l="en">Long-term partners</span><span data-l="fr">Partenaires durables</span><span data-l="zh">长期合作</span></b><span><span data-l="es">Relaciones directas y estables con fábricas y proveedores.</span><span data-l="en">Direct, stable relationships with factories and suppliers.</span><span data-l="fr">Des relations directes et stables avec usines et fournisseurs.</span><span data-l="zh">与工厂和供应商建立直接、稳定的合作关系。</span></span></div>
+    <div class="pillar"><b><span data-l="es">Vocación europea</span><span data-l="en">European reach</span><span data-l="fr">Vocation européenne</span><span data-l="zh">立足欧洲</span></b><span><span data-l="es">Desde España, vendemos y distribuimos en toda Europa.</span><span data-l="en">From Spain, we sell and distribute across Europe.</span><span data-l="fr">Depuis l'Espagne, nous vendons et distribuons dans toute l'Europe.</span><span data-l="zh">立足西班牙，销售与分销覆盖全欧洲。</span></span></div>
+   </div>
+  </section>
+ </div>
+</main>
+
+<footer>
+ <div class="wrap">
+  <img src="b98-group-light.png" alt="B98 Group">
+  <div>
+   Compañía Ballenita 98, S.L. · CIF B81983686<br>
+   Urb. S. P. de Alcántara, Olías del Rey (Toledo), España<br>
+   <a href="mailto:info@b98-group.eu">info@b98-group.eu</a><br>
+   Tel / WhatsApp / Viber: <a href="tel:+34619271811">+34 619 271 811</a><br>
+   WeChat: ivanraos68
+  </div>
+  <div>© <span id="y">2026</span> B98 Group</div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var supported=["es","en","fr","zh"];
+ function set(l){document.documentElement.lang=l;document.querySelectorAll(".langs button").forEach(function(b){b.classList.toggle("on",b.dataset.set===l)});try{localStorage.setItem("b98lang",l)}catch(e){}}
+ var saved=null;try{saved=localStorage.getItem("b98lang")}catch(e){}
+ var nav=(navigator.language||"es").slice(0,2).toLowerCase();
+ set(saved||(supported.indexOf(nav)>-1?nav:"en"));
+ document.querySelectorAll(".langs button").forEach(function(b){b.addEventListener("click",function(){set(b.dataset.set)})});
+ document.getElementById("y").textContent=new Date().getFullYear();
+ document.querySelectorAll(".logo img").forEach(function(i){i.addEventListener("error",function(){var t=document.createElement("strong");t.textContent=i.alt;t.style.cssText="font:600 24px 'Cormorant Garamond',serif;color:#0f1d33";i.replaceWith(t)})});
+})();
+</script>
+</body>
+</html>
